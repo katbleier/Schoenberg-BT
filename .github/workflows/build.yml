@@ -1,0 +1,183 @@
+name: Build and Deploy TEI Edition
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Setup Java (for Saxon XSLT processor)
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '11'
+    
+    - name: Download Saxon-HE
+      run: |
+        wget https://github.com/Saxonica/Saxon-HE/releases/download/SaxonHE12-4/SaxonHE12-4J.zip
+        unzip SaxonHE12-4J.zip
+        mv saxon-he-12.4.jar saxon-he.jar
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Create docs directory
+      run: mkdir -p docs
+    
+    - name: Transform TEI to HTML
+      run: |
+        java -jar saxon-he.jar -s:data/Tagebuch.xml -xsl:xslt/diary-to-html.xsl -o:docs/index.html
+    
+    - name: Copy assets
+      run: |
+        cp -r css docs/ 2>/dev/null || echo "No CSS directory found"
+        cp -r js docs/ 2>/dev/null || echo "No JS directory found"
+        cp -r images docs/ 2>/dev/null || echo "No images directory found"
+    
+    - name: Create basic CSS if none exists
+      run: |
+        if [ ! -f docs/css/style.css ]; then
+          mkdir -p docs/css
+          cat > docs/css/style.css << 'EOF'
+        body {
+          font-family: Georgia, serif;
+          line-height: 1.6;
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 20px;
+          color: #333;
+        }
+        
+        .entry {
+          margin-bottom: 2em;
+          padding: 1.5em;
+          border-left: 3px solid #d4a574;
+          background-color: #fafafa;
+        }
+        
+        .entry-header h3 {
+          color: #8b4513;
+          margin-top: 0;
+        }
+        
+        .person {
+          color: #2c5aa0;
+          font-weight: 500;
+        }
+        
+        .place {
+          color: #2d5016;
+          font-style: italic;
+        }
+        
+        .title {
+          font-style: italic;
+          color: #5a2d91;
+        }
+        
+        .deletion {
+          text-decoration: line-through;
+          color: #666;
+        }
+        
+        .addition {
+          color: #d2691e;
+          font-weight: 500;
+        }
+        
+        .highlight-underline {
+          text-decoration: underline;
+        }
+        
+        .facsimile-link {
+          display: inline-block;
+          margin: 1em 0;
+          padding: 0.3em 0.6em;
+          background-color: #e8e8e8;
+          border-radius: 3px;
+          text-decoration: none;
+          font-size: 0.9em;
+        }
+        
+        .person-list, .place-list {
+          columns: 2;
+          column-gap: 2em;
+        }
+        
+        .person-list li, .place-list li {
+          break-inside: avoid;
+          margin-bottom: 0.5em;
+        }
+        
+        .mention-count {
+          color: #666;
+          font-size: 0.9em;
+        }
+        
+        .external-link {
+          font-size: 0.8em;
+          margin-left: 0.5em;
+        }
+        
+        nav ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          gap: 2em;
+          margin-bottom: 2em;
+          border-bottom: 2px solid #d4a574;
+          padding-bottom: 1em;
+        }
+        
+        nav a {
+          color: #8b4513;
+          text-decoration: none;
+          font-weight: 500;
+        }
+        
+        nav a:hover {
+          text-decoration: underline;
+        }
+        
+        header {
+          text-align: center;
+          margin-bottom: 3em;
+        }
+        
+        header h1 {
+          color: #8b4513;
+          margin-bottom: 0.5em;
+        }
+        
+        .author, .editor {
+          color: #666;
+          font-style: italic;
+        }
+        
+        footer {
+          margin-top: 3em;
+          padding-top: 2em;
+          border-top: 1px solid #ddd;
+          text-align: center;
+          color: #666;
+          font-size: 0.9em;
+        }
+        EOF
+        fi
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
