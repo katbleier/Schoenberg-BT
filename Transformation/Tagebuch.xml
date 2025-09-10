@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_minimal%20(3).rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="T26.02">
+    <teiHeader xml:lang="de">
+        <fileDesc>
+            <titleStmt>
+                <title type="source">Versuch eines Tagebuchs 1912</title>
+                <title type="uniform">Berliner Tagebuch</title>
+                <author ref="https://d-nb.info/gnd/118610023">
+                    <forename>Arnold</forename>
+                    <surname>Schönberg</surname>
+                </author>
+                <editor ref="https://d-nb.info/gnd/1060272059"><forename>Katharina</forename>
+                    <surname>Bleier</surname></editor>
+            </titleStmt>
+            <publicationStmt>
+                <publisher><persName>Katharina Bleier</persName></publisher>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc-Sa/4.0">Creative
+                        Commons BY-NC-SA 4.0</licence>
+                </availability>
+                <date when-iso="2025"/>
+                <pubPlace ref="http://www.geonames.org/2761369/">Wien</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement><placeName ref="http://www.geonames.org/2761369/"
+                                >Wien</placeName></settlement>
+                        <institution ref="http://d-nb.info/gnd/10000022-8">Arnold Schönberg
+                            Center</institution>
+                        <collection>Arnold Schoenberg Estate</collection>
+                        <idno type="shelfmark">T26.02</idno>
+                        <altIdentifier>
+                            <idno type="URI"
+                                >https://repo.schoenberg.at/urn:nbn:at:at-asc-T013485</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                </msDesc>
+            </sourceDesc>
+            <!-- physDesc objektbeschreibung -->
+        </fileDesc>
+        <revisionDesc>
+            <change><date when="2025-09-06">korr</date></change>
+        </revisionDesc>
+    </teiHeader>
+        <text>
+        <body>
+            <div type="entry"><pb n="1" facs="https://repo.schoenberg.at/urn:nbn:at:at-asc-TL524854"/>
+                <head><date when="1912-01-20"><hi rend="underline">20. Jänner 1912</hi></date></head>
+                <p><del rend="strikethrough">Endlich begonnen. Habe es schon so lange vorgehabt.</del><add place="inline">doch nicht heute</add> Aber ich konnte mich von der
+                    Vorstellung nicht frei machen, dass ich vorher über mein früheres Leben notieren
+                    müsste, was mir einfällt. <del rend="strikethrough">Deshalb</del><add place="above">Derhalb</add> habe ich 10 Jahre, oder mehr versäumt. Aber
+                    jetzt wird es gehen. Denn ich habe mir vorgenommen, mich selbst zu täuschen,
+                    indem ich mir einrede, ich werde nur ganz kurze Bemerkungen hineinschreiben, zu
+                    denen man alle Tage Zeit findet.</p>
+                <p>Also: Gestern abend in <persName ref="https://d-nb.info/gnd/116791357">Fried</persName>s Konzert gewesen:
+                    <persName ref="https://d-nb.info/gnd/118518011">Busoni</persName>-Kompositionen hatten mir bis jetzt nicht
+                    gefallen. Aber gestern gefiel mir <title type="music">Berceuse</title>. Direkt
+                    ergreifendes Stück. Wirklich empfunden. Dem habe ich sehr unrecht getan. Wieder
+                    einem! – Dagegen <persName ref="https://d-nb.info/gnd/116791357">Fried</persName>: der gefällt mir immer weniger. Der
+                    ist nur ein Reißer. Seit ich ihn kühl behandle, bewirbt er sich sehr um mich.
+                    Aber ich lasse ihn abgleiten. Nachher <persName ref="https://d-nb.info/gnd/119436744">Koussiewitzki</persName> kennen
+                    gelernt. <persName ref="https://d-nb.info/gnd/116934042">Guttmann</persName> mich zu ihm geschleppt. Er will im
+                    nächsten Jahr <title type="music">Pelleas</title> in
+                        <placeName>Petersburg</placeName> und <placeName>Moskau</placeName>
+                    aufführen. Wäre sehr schön, hoffentlich. Immerhin beginnt doch heuer das Ausland
+                    sehr intensiv sich mit mir zu befassen. In 2 Wochen sagt <persName ref="https://d-nb.info/gnd/119436744">K.</persName>
+                    soll in <placeName>Petersburg</placeName> überdies mein <title type="music">II.
+                        Quartett</title> gemacht werden. – Dann <persName ref="https://d-nb.info/gnd/116239506">van Düren</persName>
+                    kennen gelernt. Soll sehr interessant sein. Bin neugierig. Wird mich besuchen
+                    und Kompositionen zeigen. Nach dem Konzert mit <persName ref="https://d-nb.info/gnd/116934042">Guttmann</persName>,
+                    <persName ref="https://d-nb.info/gnd/116755121">Herzka</persName>
+                    <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> und <persName>Clark</persName> im
+                    <placeName>Heidelberger Restaurant</placeName>. <persName ref="https://d-nb.info/gnd/116934042">Gutmann</persName>
+                    sehr übermütig. Soll aber geschworen (!!) haben, im Herbst <title type="music"
+                        >Gurrelieder</title> aufzuführen! Werden sehen. <persName ref="https://d-nb.info/gnd/116755121">Herzka</persName>
+                    strahlte! – Im Konzert auch <persName ref="https://d-nb.info/gnd/116133767">Petri</persName> gesprochen. Weichlich.
+                    Soll meine Lieder und Klavierstücke aufführen (am 28.). Ohne mir direkt zu
+                    missfallen, gefällt er mir – wenig. <persName ref="https://d-nb.info/gnd/118518011">Busoni</persName> gefragt ob er in
+                    Orchesterstücken Klavierpart nehmen will. Abgelehnt: keine Zeit (offenbar keine
+                    Lust!) Infolgedessen: <persName ref="https://d-nb.info/gnd/116133767">Petri</persName> auch keine Lust. Ein
+                    Meisterchen! Werde andere nehmen.</p>
+            </div>
+            <div type="entry">
+                <head><date when-iso="1912-01-21">21. Jänner</date> (Sonntag)</head>
+                <p>Heute angenehme Nachrichten per Post (seit langem die ersten):
+                    <orgName>Peters</orgName> nimmt Orchesterstücke. Honorar niedrig! Aber
+                    <orgName>Peters-Edition</orgName>! Das entscheidet. Und gedruckt!
+                    <persName ref="https://d-nb.info/gnd/116790962">Marschalk</persName> meldet sich wieder. Der hat Hinter=Gründe!
+                    Offenbar hat er sich mit <persName ref="https://d-nb.info/gnd/116755121">Herzka</persName> über meine und seine Sachen
+                    auseinandergesetzt. Habe <persName ref="https://d-nb.info/gnd/116755121">Herzka</persName> wegen Druck der 5 freien
+                    Werke zum letzten mal gefragt. Gleichzeitig <persName>Tischer</persName> und
+                        <persName>Jagenberg</persName> angefragt ob Sie sie haben wollen. Ich glaube
+                    nicht, damit ein Unrecht zu tun, da ich nicht die Absicht habe, einen durch den
+                    andern zu überbieten. Sondern im Gegenteil: Ich habe von
+                    <persName ref="https://d-nb.info/gnd/116755121">Herzka</persName> weniger verlangt und werde trotzdem ihm die
+                    Sachen geben ohne auf <persName><abbr>T.</abbr><expan>Tischer</expan></persName> und <persName>J.</persName> zu
+                    warten. Also nur um Zeit zu gewinnen. – Vormittag unangenehme Nachricht: Frau
+                        <persName>Simon-Herlitz</persName> spielt nicht den Harmonium-Part in meinem
+                    Konzert. Empfiehlt <persName>Kaempf</persName>. Bös, im letzten Moment jemanden
+                    suchen zu müssen. Uebrigens <pb n="2" facs="https://repo.schoenberg.at/urn:nbn:at:at-asc-TL524862"/>noch immer keine Zusage von der Winternitz. Dann nachmittag wieder unange-
+                    nehmes. <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> wird am 5. März nicht in Berlin sein, wenn Rosé hier 
+                    mein I. Quartett spielt. Tut mir leid, weil der einzige Freund der das 
+                    Werk kennt, der einzige der ihm mit Wärme gegenübersteht. Er fährt 
+                    nach Wien um die VIII Mahler-Symphonie zu hören. Täte ich ja auch gerne. 
+                    Zeigt aber dass er doch nicht so ausschließlich an mir hängt, wie er gerne glauben 
+                    machen möchte. Abends Diskussion darüber mit Mathilde. Resultat davon: 
+                    wir sind halb und halb bös. Natürlich geht sie viel zu weit; denn sie 
+                    hat aus gewissen Gründen (G) ein Bedürfnis dem <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> eins am Zeug 
+                    zu flicken. Ich hielt ihr vor, dass ich selber mich gegen Mahler eigentlich oft 
+                    nicht besser aufgeführt habe; dass Eltern gegen <note type="commentary" resp="editor">Kinder</note>, Kinder gegen Eltern 
+                    sich schlecht benehmen. Dass gut eben eine Abstraktion ist und nichts Absolutes. 
+                    Dass es Absolut gute und tadellose Menschen nicht giebt. Und dass ich nicht 
+                    vergessen will, in wie vielen andern Fällen sich <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> ausgezeichnet 
+                    zu mir benimmt. Aber das will sie nicht einsehen. Sie bleibt starr 
+                    bei ihrer Behauptung und hört kaum zu. –</p>
+            </div>
+            <div type="entry" rend="inline">
+                <head><date when-iso="1912-01-22">22. Jänner</date></head>
+                <p>Mit <persName ref="https://d-nb.info/gnd/116133767">Petri</persName> Probe gehabt. Er wird die Stücke wahrscheinlich
+                    ausgezeichnet spielen. Mindestens klavieristisch. Im Ganzen nahm er alles zu
+                    rasch; oder vielmehr zu eilig. Ich sagte zu <persName ref="https://d-nb.info/gnd/118629786">Webern</persName>: zu
+                    meiner Musik muss man Zeit haben. Die ist nichts für Leute, die anderes zu tun
+                    haben. Aber es ist jedenfalls ein großes Vergnügen seine Sachen von jemandem zu
+                    hören, der sie technisch vollkommen beherrscht. Es scheint, dass das Konzert
+                    sehr schön werden wird. Ich verspreche mir das Beste von den 8händigen
+                    Orchesterstücken! In den Vortrag kam ich um eine Viertelstunde zu spät.
+                    <persName ref="https://d-nb.info/gnd/118518011">Busoni</persName> anwesend mit Frau und Sohn. Letzterer, sowie
+                    <persName ref="https://d-nb.info/gnd/116239506">van Düren</persName> waren auch (ebenso
+                    <persName>Clark</persName>) bei <persName ref="https://d-nb.info/gnd/116133767">Petri</persName>. <persName ref="https://d-nb.info/gnd/116239506">Van
+                        Düren</persName> sieht sympathisch aus (<persName ref="https://d-nb.info/gnd/116239506">Dürer</persName>? ! ?). Seine Musik ist
+                    entschieden harmonisch der meinigen nahestehend. Aber rhythmisch und formell
+                    nicht! Habe im Vortrag ohne Vorbereitung gesprochen. Im Ganzen nicht einmal so
+                    schlecht. Obwohl ich einigemale bedenklich den Faden verlor und manches nicht zu
+                    Ende brachte, was ich angefangen hatte. Ich war wirklich müde von der schlecht
+                    durchbrachten Nacht, in der <persName ref="https://d-nb.info/gnd/1013623088">Görgi</persName> wegen Frostbeulen geweint
+                    hat. Aber trotzdem brachte ich es immerhin dazu meine Idee über das »obligate
+                    Recitativ« (diesen Namen zu nennen vergaß ich merkwürdigerweise) ziemlich klar
+                    darzustellen und zu begründen. Ganz nicht. Die Idee ist tiefer: das
+                    Unaussprechliche sagt man in der freien Form. In der nähert es sich der Natur,
+                    die auch unfassbar und trotzdem wirksam ist. <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> war mit
+                    mir. Gefiel <pb n="3" facs="https://repo.schoenberg.at/urn:nbn:at:at-asc-TL524862"/>mir heute nicht besonders. Als er bemerkte, dass ich verstimmt bin, hatte 
+                    er etwas unterdrückt Höhnisches an sich. – Morgen Probe mit den 3 Clavier-
+                    Virtuosen. <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> ersuchte mich ihn nicht zu blamieren, durch Tadel! 
+                    Als ob ich je so etwas getan hätte. Musste ablehnen jene Sachen zu 
+                    verschweigen, die für die Ausführung wichtig sind. Merkwürdig. So 
+                    eine kleine Verstimmung will nicht nachlassen. Aber ich mag mich 
+                    nicht gegen <persName ref="https://d-nb.info/gnd/118629786">Webern</persName> einnehmen lassen. Ich glaube, er hat einmal
+                    hier etwas unrichtiges getan, sonst aber will er das Beste!! 
+                    Und das entscheidet!
+                    
+                    ––––
+                </p>
+            </div>
+        </body>
+    </text>
+
+
+
+</TEI>
